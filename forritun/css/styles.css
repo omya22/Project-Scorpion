@@ -33,45 +33,52 @@ h1 {
 		color: #737373;
 	}
 
-#header{
-	background: linear-gradient( #FAA20E, #E7833B);
-	width: 100%;
-	height: 500px;
-	box-shadow: 0 2px 4px rgba(0,0,0,.4);
-	text-align: center;
-	font-weight: normal;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-	display: flex;
-}
-.logo {
-	position: absolute;
-	top: 26px;
-	left: 24px;
-	width: 130px;
-}
-.searchIcon {
-	position: absolute;
-	right: 50px;
-	top: 44px;
-}
-
-.searchIcon img {
-	width: 50px;
-}
-.headerText {
-	
-}
-.headerText:after {
-	content: "Your favourite movie source";
-	color: white;
-	font-family: "Oswald";
-	font-weight: 300;
-	font-size: 42px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-}
+	/* 	-----	HEADER	-----  */
 
 
+	#header{
+		background: linear-gradient( #FAA20E, #E7833B);
+		width: 100%;
+		height: 500px;
+		box-shadow: 0 2px 4px rgba(0,0,0,.4);
+		text-align: center;
+		font-weight: normal;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+		display: flex;
+	}
+	.logo {
+		position: absolute;
+		top: 26px;
+		left: 24px;
+		width: 130px;
+	}
+	.searchIcon {
+		position: absolute;
+		right: 50px;
+		top: 44px;
+	}
 
+	.searchIcon img {
+		width: 50px;
+	}
+	.headerText {
+		
+	}
+	.headerText:after {
+		content: "Your favourite movie source";
+		color: white;
+		font-family: "Oswald";
+		font-weight: 300;
+		font-size: 42px;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	}
+
+/* 	----	BODY	-----  */
+
+
+
+
+/* ---- 	MEDIA	 ----*/
 
 
 @media (max-width: 600px){
