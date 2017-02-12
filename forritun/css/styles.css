@@ -2,6 +2,7 @@
 body {
 		font-family: 'Oswald', sans-serif;
 }
+
 h1 {
 		font-family: 'Oswald', sans-serif;
 		font-size: 72px;
@@ -35,22 +36,25 @@ h1 {
 
 	/* 	-----	HEADER	-----  */
 
-
 	#header{
-		background: linear-gradient( #FAA20E, #E7833B);
 		width: 100%;
 		height: 500px;
-		box-shadow: 0 2px 4px rgba(0,0,0,.4);
 		text-align: center;
 		font-weight: normal;
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 		display: flex;
+		background: -webkit-linear-gradient(#FAA20E 51%, #E7833B 84%);
+		background: -o-linear-gradient(#FAA20E 51%, #E7833B 84%);
+		background: linear-gradient(#FAA20E 51%, #E7833B 84%);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	
 	}
-	.logo {
+	.logoHeader {
 		position: absolute;
 		top: 26px;
 		left: 24px;
 		width: 130px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 	}
 	.searchIcon {
 		position: absolute;
@@ -72,12 +76,110 @@ h1 {
 		font-size: 42px;
 		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	}
+	
+
+/* 	----	FOOTER	-----  */
+
+#footer{
+		width: 100%;
+		height: 305px;
+		margin-top: 50px;
+		position: relative;
+		text-align: center;
+		font-weight: normal;
+		display: flex;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+		background: -webkit-linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+		background: -o-linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+		background: linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	}
+.logoFooter {
+	width: 130px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 /* 	----	BODY	-----  */
 
+	.movieImg {
+			height: 350px;
+			border: 2px solid white;
+			box-sizing: border-box;
+			box-shadow: 0 2px 8px rgba(0,0,0, .3);
+			overflow: hidden;
+			position: relative;
+			margin: 5px;
+		}
+		.movieImg:after {
+			height: 50%;
+			width: 100%;
+			background-color: rgba(255,255,255,.7);
+			content: "";
+			z-index: 120;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.movieImg img {
+			width: 100%;
+		}
+		.categoryText {
+			padding-top: 28px;
+			padding-bottom: 18px;
+		}
+	.movieImgInfo {
+			color: black;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 300;
+			font-size: 30px;
+			color: #4F4F4F;
+			text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+		}
+	.movieImgRating {
+			/* Ellipse 2 */
+			background: #E7833B;
+			box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+			width: 32px;
+			height: 32px;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.movieImgRating:after{
+			content: "8.1";
+			font-family: "Roboto";
+			font-weight: bold;
+			font-size: 13px;
+			color: #FFFFFF;
+			align-self: center;
+		}
 
-
-
+		.slick-prev, .slick-next {
+		background-color: rgba(255,255,255,0.2);
+		position: absolute;
+		z-index: 900;
+		height: 100%;
+		width: 40px;
+		transition: ease-in-out .1s;
+		}
+		.slick-prev:hover, .slick-next:hover {
+			background-color: rgba(255,255,255,0.2);
+		}
+		.slick-prev{
+			left: 0;
+		}
+		.slick-next {
+			right: 0;
+}
+/* ---- 	MEDIA	 ----*/
+/* ---- 	MEDIA	 ----*/
 /* ---- 	MEDIA	 ----*/
 
 
@@ -114,7 +216,9 @@ h1 {
 		color: #737373;
 	}
 
-
+	footer { 
+	display: none;
+	}
 	/* 	-----	HEADER	-----  */
 
 
@@ -127,13 +231,14 @@ h1 {
 		position: relative;
 		}
 
-		.logo{
+		.logoHeader{
 			height: 42px;
 			width: 52px;
 			position: absolute;
 			left: 16px;
 			top: 14px;
 		}
+
 		.searchIcon {
 			height: 20px;
 			width: 21px;
@@ -173,7 +278,7 @@ h1 {
 		.movieImg:after {
 			height: 100%;
 			/*width: 100px;*/
-			/*background-color: rgba(255,255,255,.7);*/
+			background-color: transparent;
 			content: "";
 			z-index: 120;
 			position: absolute;
@@ -182,7 +287,7 @@ h1 {
 			border-bottom: 214px solid rgba(255,255,255,.8);
     		border-left: 90px solid transparent;
     		border-right: 100% solid transparent;
-			width: 60%;
+			width: 70%;
 		}
 		.movieImgInfo {
 			color: black;
