@@ -113,7 +113,7 @@ h1 {
 			box-shadow: 0 2px 8px rgba(0,0,0, .3);
 			overflow: hidden;
 			position: relative;
-			margin: 5px;
+			margin: 12px;
 		}
 		.movieImg:after {
 			height: 50%;
