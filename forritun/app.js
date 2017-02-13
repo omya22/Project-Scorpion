@@ -5,7 +5,7 @@ const ejs = require('ejs')
 const fetch = require('node-fetch');
 const app = express();
 const httpServer = http.createServer(app);
-const port = 3000;
+const port = 4000;
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
