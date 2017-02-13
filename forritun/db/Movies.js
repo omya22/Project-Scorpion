@@ -30,7 +30,15 @@ class Movies extends TheMovieDB {
 	getVideos() {}
 	getTranslations() {}
 	getRecommendations() {}
-	getSimilarMovies() {}
+	getSimilarMovies() {
+		this.validateRequired(arguments, 2, options, ["id"] );
+		this.client(
+			{
+				url: "movie/" + options.id + "/credits" + this.generateQuery(options)
+			},
+			callback
+		)
+	}
 	getReviews() {}
 	getLists() {}
 	rateMovie() {}
