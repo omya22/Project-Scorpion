@@ -44,17 +44,6 @@
 			<% for(var i=0; i < data.results.length; i++) {%>
 				<div class="small-11 large-3 movieImg">
 				<a href="/movie/<%= data.results[i].id %>">
-					<div class="columns small-7 large-12 movieImgInfo">
-						<div class="row align-spaced align-self-middle">
-							<div class="large-10 small-9 align-self-middle movieImgTitle">
-								<h3><%= data.results[i].title %></h3>
-							</div>
-							<div class="starringInfo columns large-12">
-								<ul class="row column">
-								</ul>
-							</div>
-						</div>
-					</div>
 					<img src="https://image.tmdb.org/t/p/w500/<%= data.results[i].poster_path %>" alt="">
 					</a>
 				</div>

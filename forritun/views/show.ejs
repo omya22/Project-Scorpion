@@ -132,116 +132,22 @@
 					<div class="relevantMovies">
 						<h2>People also liked</h2>
 						<div class="responsive relevant">
+							<% for(var i=0; i < similar.results.length; i++) {%>
 							<div class="small-11 large-3 movieImg">
+								<a href="/movie/<%= similar.results[i].id %>">
 								<div class="columns small-7 large-12 movieImgInfo">
 									<div class="row align-spaced align-self-middle">
-										<div class="large-10 small-9 align-self-middle movieImgTitle">
+										<div class="large-10 small-12 movieImgTitle">
 											<h3>
-												Rogue One: Star Wars
+												<%= similar.results[i].title %>
 											</h3>
 										</div>
 									</div>
-
-									<div class="starringInfo columns large-12">
-										<ul class="row column">
-											<li>Felicity Jones
-											</li>
-
-											<li>Diego Luna
-											</li>
-
-											<li>Forest Whitaker
-											</li>
-										</ul>
-									</div>
-
-									<div class="row align-spaced ratingRow">
-										<h4 class="large-6 align-self-bottom">
-											Action, Adventure Sci-Fi
-										</h4>
-
-										<div class="">
-											<div class="movieImgRating">
-											</div>
-										</div>
-									</div>
 								</div>
-								<img alt="" src="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg">
+								<img alt="" src="https://image.tmdb.org/t/p/w500/<%= similar.results[i].poster_path %>">
+								</a>
 							</div>
-							<div class="small-11 large-3 movieImg">
-								<div class="columns small-7 large-12 movieImgInfo">
-									<div class="row align-spaced align-self-middle">
-										<div class="large-10 small-9 align-self-middle movieImgTitle">
-											<h3>
-												Rogue One: Star Wars
-											</h3>
-										</div>
-									</div>
-
-									<div class="starringInfo columns large-12">
-										<ul class="row column">
-											<li>Felicity Jones
-											</li>
-
-											<li>Diego Luna
-											</li>
-
-											<li>Forest Whitaker
-											</li>
-										</ul>
-									</div>
-
-									<div class="row align-spaced ratingRow">
-										<h4 class="large-6 align-self-bottom">
-											Action, Adventure Sci-Fi
-										</h4>
-
-										<div class="">
-											<div class="movieImgRating">
-											</div>
-										</div>
-									</div>
-								</div>
-								<img alt="" src="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg">
-							</div>
-							<div class="small-11 large-3 movieImg">
-								<div class="columns small-7 large-12 movieImgInfo">
-									<div class="row align-spaced align-self-middle">
-										<div class="large-10 small-9 align-self-middle movieImgTitle">
-											<h3>
-												Rogue One: Star Wars
-											</h3>
-										</div>
-									</div>
-
-									<div class="starringInfo columns large-12">
-										<ul class="row column">
-											<li>Felicity Jones
-											</li>
-
-											<li>Diego Luna
-											</li>
-
-											<li>Forest Whitaker
-											</li>
-										</ul>
-									</div>
-
-									<div class="row align-spaced ratingRow">
-										<h4 class="large-6 align-self-bottom">
-											Action, Adventure Sci-Fi
-										</h4>
-
-										<div class="">
-											<div class="movieImgRating">
-											</div>
-										</div>
-									</div>
-								</div>
-								<img alt="" src="http://a.dilcdn.com/bl/wp-content/uploads/sites/6/2016/10/rogueone_onesheetA.jpg">
-							</div>
-						</div>
-
+							<% } %>
 						</div>
 					</div>
 
