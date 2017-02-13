@@ -95,49 +95,16 @@
 				</div>
 				<div class="cast">
 					<h2>Cast</h2>
-						<% for(var i=0; i < credit.cast.length; i++) {%>
 			 			<div class="responsiveCast small-12 large-12 align-center">
+						<% for(var i=0; i < credit.cast.length; i++) {%>
 							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
+								<img src="https://image.tmdb.org/t/p/w500/<%= credit.cast[i].profile_path %>" alt="">
 								<div class="artistName">
-									<h4>Felicty Jones</h4>
+									<h4><%= credit.cast[i].name %></h4>
 								</div>
 							</div>
-
-							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
-								<div class="artistName">
-									<h4>Felicty Jones</h4>
-								</div>
-							</div>
-							
-							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
-								<div class="artistName">
-									<h4>Felicty Jones</h4>
-								</div>
-							</div>
-
-							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
-								<div class="artistName">
-									<h4>Felicty Jones</h4>
-								</div>
-							</div>
-							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
-								<div class="artistName">
-									<h4>Felicty Jones</h4>
-								</div>
-							</div>
-							<div class="cast">
-								<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0MTIwMzIyN15BMl5BanBnXkFtZTgwNDEyMzg1NDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="">
-								<div class="artistName">
-									<h4>Felicty Jones</h4>
-								</div>
-						</div>
-					</div>
 						<% } %>
+						</div>
 				</div>
 
 					<div class="stills">
