@@ -39,7 +39,7 @@
 }
 
 .movieImgRating {
-	right: 0;
+	right: 16px;
 	position: absolute;
 	z-index: 800;
 	top: -50px;
