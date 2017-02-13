@@ -46,7 +46,7 @@
 
 		<div class="">
 			<div class="large-12 trailer">
-				<video src="" poster="https://image.tmdb.org/t/p/w500/<%= data.poster_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
+				<video src="" poster="https://image.tmdb.org/t/p/original/<%= data.backdrop_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
 			</div>
 		</div>
 		
@@ -98,10 +98,12 @@
 			 			<div class="responsiveCast small-12 large-12 align-center">
 						<% for(var i=0; i < credit.cast.length; i++) {%>
 							<div class="cast">
+								<a href="/people/<%= credit.cast[i].id %>">
 								<img src="https://image.tmdb.org/t/p/w500/<%= credit.cast[i].profile_path %>" alt="">
 								<div class="artistName">
 									<h4><%= credit.cast[i].name %></h4>
 								</div>
+								</a>
 							</div>
 						<% } %>
 						</div>
@@ -135,15 +137,6 @@
 							<% for(var i=0; i < similar.results.length; i++) {%>
 							<div class="small-11 large-3 movieImg">
 								<a href="/movie/<%= similar.results[i].id %>">
-								<div class="columns small-7 large-12 movieImgInfo">
-									<div class="row align-spaced align-self-middle">
-										<div class="large-10 small-12 movieImgTitle">
-											<h3>
-												<%= similar.results[i].title %>
-											</h3>
-										</div>
-									</div>
-								</div>
 								<img alt="" src="https://image.tmdb.org/t/p/w500/<%= similar.results[i].poster_path %>">
 								</a>
 							</div>

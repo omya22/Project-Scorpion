@@ -31,22 +31,4 @@ exports.index = function(req, res, next){
 		})
 
 	});
-
-
-
-        
-
-/*
-		genre.getList({}, gdata=>{
-			const genreList = JSON.parse(gdata);
-			console.log(genreList)
-			genreList.genres.forEach(function(item) {
-				genre.getMovies({genre_id: item.id}, ldata=> {
-
-				})
-				res.render('index', {data: popular, gdata: genreList});
-			});
-			})
-	});*/
-  	
 };
