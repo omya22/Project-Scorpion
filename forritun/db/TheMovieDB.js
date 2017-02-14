@@ -76,10 +76,10 @@ class TheMovieDB  {
                     callback(xhr.responseText);
                     return xhr.responseText;
                 } else {
-                    //error(xhr.responseText);
+                    callback(xhr.responseText);
                 }
             } else {
-                //error(xhr.responseText);
+                callback(xhr.responseText);
             }
         };
 
