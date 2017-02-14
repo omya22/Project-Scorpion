@@ -6,23 +6,28 @@ const discover = new Discover();
 const genre = new Genres();
 
 exports.index = function(req, res, next){
-	//db.getMovies({view: 'index'}, req, res);
-	genre.getList({}, gldata=>{
+/*
+	discover.getMovies({}, data=>{
+		const popular = JSON.parse(data);
+		res.render('index', {data: popular});
+	});
+	*/
+		genre.getList({}, gldata=>{
 		const genreList = JSON.parse(gldata);
 		discover.getMovies({}, data=>{
 			const popular = JSON.parse(data);
 			let gen = [];
-			let genlist = [];
 			genreList.genres.forEach(function(item, i) {
 				genre.getMovies({id: item.id}, ldata=> {
 					//console.log(ldata)
 					const genreParse = JSON.parse(ldata);
 					gen.push({
 						name: item.name,
+						id: item.id,
 						data: genreParse
 					})
 					i++;
-					if(i === (genreList.genres.length - 1)) {
+					if(gen.length === (genreList.genres.length)) {
 						res.render('index', {data: popular, gdata: gen});
 					}
 				});
@@ -31,22 +36,5 @@ exports.index = function(req, res, next){
 		})
 
 	});
-
-
-
-        
-
-/*
-		genre.getList({}, gdata=>{
-			const genreList = JSON.parse(gdata);
-			console.log(genreList)
-			genreList.genres.forEach(function(item) {
-				genre.getMovies({genre_id: item.id}, ldata=> {
-
-				})
-				res.render('index', {data: popular, gdata: genreList});
-			});
-			})
-	});*/
-  	
+	
 };

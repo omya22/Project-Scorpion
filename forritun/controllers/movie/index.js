@@ -7,8 +7,12 @@ exports.show = function(req, res, next){
 		const movie = JSON.parse(data);
 		db.getCredits({id: req.params.movie_id}, cdata=> {
 			const movieCredit = JSON.parse(cdata);
-			console.log(movieCredit)
-			res.render('show', {data: movie, credit: movieCredit});
+			db.getSimilarMovies({id: req.params.movie_id}, sdata=> {
+				const movieSimilar = JSON.parse(sdata);
+				console.log(movieSimilar);
+				res.render('show', {data: movie, credit: movieCredit, similar: movieSimilar});
+			})
+			
 		})
 	});
   	
