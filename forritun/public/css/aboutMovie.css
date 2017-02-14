@@ -27,7 +27,7 @@
     -webkit-transform: skew(0deg,-10deg); /* Safari */
     transform: skew(0deg,-10deg); 
     position: absolute;
-    top: 254px;
+    top: 204px;
 }
 .unskewInfoBox {
 	width: 100%;
@@ -38,7 +38,7 @@
     position: absolute;
 }
 
-.movieImgRating {
+.movieImgRatingLarge {
 	right: 16px;
 	position: absolute;
 	z-index: 800;
@@ -52,6 +52,7 @@
 .cast {
 	margin-right: 6px;
 	padding-right: -20px;
+	margin-bottom: 36px;
 }
 /*.cast img{
 	height: 110px;
@@ -84,13 +85,34 @@
 	font-family: none;
 
 	}
-
+.stills {
+	margin-bottom: 36px;
+}
 .still {
 	margin-right: 6px;
 }
 .still img {
 	height: 140px;
 }
+.movieHeader {
+	height: 100%;
+}
+.playButton {
+	position: absolute;
+	z-index: 999;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.playButton svg {
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	/*top: calc(100%/4);*/
+	width: 50px;
+}
+
 
 @media screen and (min-width: 600px) {
 
@@ -116,11 +138,38 @@
 	.unskewInfoBox {
 	top: 50px;
 	}
-	.movieImgRating {
+	.movieImgRatingLarge {
 	transform: scale(1.5);
 	top: -150px;
 }
 
+.movieInfo {
+	display: flex;
+}
+.large-flex-first {
+	-webkit-order: -1;
+    order: -1;
+}
+.movieTitle h2 {
+	font-size: 50px;
+}
+
+.cast {
+	height: 305px;
+}
+/*.still {
+	margin-right: 6px;
+	height: 221px;
+	width: 221px;
+	position: relative;
+}
+.still img {
+	position: absolute;
+}*/
+.playButton svg {
+	top: calc(100%/3);
+	width: 100px;
+}
 }
 
 

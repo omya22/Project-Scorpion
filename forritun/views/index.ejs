@@ -37,14 +37,14 @@
 
 	<!-- Category 1 Row-1 -->
 	<div class="column">
-		<div class="row small-12 large-12 categoryText">
+		<div class="row column small-12 large-11 categoryText">
 			<h2>Popular</h2>
 		</div>
 		<div class="row row-1 small-12 large-11  responsive">
 			<% for(var i=0; i<data.results.length; i++) {%>
 				<div class="small-11 large-3 movieImg">
 				<a href="/movie/<%= data.results[i].id %>">
-					<div class="columns small-7 large-12 movieImgInfo">
+					<div class="columns small-7 medium-12 large-12 movieImgInfo">
 						<div class="row align-spaced align-self-middle">
 							<div class="large-10 small-9 align-self-middle movieImgTitle">
 								<h3><%= data.results[i].title %></h3>
@@ -61,14 +61,14 @@
 			<% } %>
 		</div>
 	<% for(var i=0; i<gdata.length; i++) {%>	
-		<div class="row small-12 large-12 categoryText">
+		<div class="row column small-12 large-11 categoryText">
 			<h2><%= gdata[i].name %></h2>
 		</div>	
 		<div class="row row-1 small-12 large-11  responsive">
 		<% for(var j=0; j < gdata[i].data.results.length; j++) {%>
 				<div class="small-11 large-3 movieImg">
 				<a href="/movie/<%= gdata[i].data.results[j].id %>">
-					<div class="columns small-7 large-12 movieImgInfo">
+					<div class="columns small-7 medium-12 large-12 movieImgInfo">
 						<div class="row align-spaced align-self-middle">
 							<div class="large-10 small-9 align-self-middle movieImgTitle">
 								<h3><%= gdata[i].data.results[j].title %></h3>

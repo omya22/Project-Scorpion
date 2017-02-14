@@ -192,12 +192,15 @@ h3 {
 	font-size: 30px;
 }
 h4 {
-	font-size: 14px;
+	
 	line-height: 100%;
 	color: #737373;
 }
 
-
+p {
+font-size: 22px;
+line-height: 113%;
+}
 /* 	-----	HEADER	-----  */
 
 #header {
@@ -347,5 +350,23 @@ h4 {
 	.slick-next {
 		right: 0px;
 	}
+
+	.cast h4 {
+		margin-top: 12px;
+		font-size: 20px;
+		text-align: center;
 	}
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
 

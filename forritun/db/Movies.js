@@ -26,7 +26,9 @@ class Movies extends TheMovieDB {
 	getImages() {}
 	getKeywords() {}
 	getReleaseDates() {}
-	getTrailers() {}
+	// getTrailers(options, callback) {
+			
+	// }
 	getVideos() {}
 	getTranslations() {}
 	getRecommendations() {}

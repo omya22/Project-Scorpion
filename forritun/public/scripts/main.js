@@ -32,7 +32,12 @@
 // }
 
 // r.send("banana=yellow");
+
+
 $(document).ready(function(){
+  $(document).foundation();{
+
+  };
 $('.responsive').slick({
   prevArrow: '<button type="button" class="slick-prev">Previous</button>',
   nextArrow: '<button type="button" class="slick-next">Next</button>',
@@ -136,7 +141,7 @@ $('.responsiveStills').slick({
 	{
       breakpoint: 1920,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 2,
         infinite: false,
       }
