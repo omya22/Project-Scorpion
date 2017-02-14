@@ -79,6 +79,7 @@
 	}
 
 	.movieImg {
+		height: 214px;
 		border: 2px solid white;
 		box-sizing: border-box;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
@@ -271,6 +272,7 @@ line-height: 113%;
 /* 	----	BODY	-----  */
 
 .movieImg {
+	height: 350px;
 	border: 2px solid white;
 	box-sizing: border-box;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
@@ -356,15 +358,5 @@ line-height: 113%;
 	}
 	
 	}
-
-
-
-
-
-
-
-
-
-
 
 
