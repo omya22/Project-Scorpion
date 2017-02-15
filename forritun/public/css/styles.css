@@ -106,16 +106,10 @@
 		border-right: 100% solid transparent;
 		width: 70%;
 	}
-	
-/*	.movieImgTitle h3{
-		text-align: right;
-	}*/
 	.movieImgInfo {
-		color: black;
-		position: absolute;
 		margin: auto;
   		position: absolute;
-  		top: 0; left: 0; bottom: 0; right: 0;
+		bottom: 5%; left: 60%;
 		z-index: 300;
 		font-size: 30px;
 		color: #4F4F4F;
@@ -308,7 +302,7 @@ line-height: 113%;
 	color: black;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	left: 0;
 	z-index: 300;
 	font-size: 30px;
 	color: #4F4F4F;
@@ -317,9 +311,12 @@ line-height: 113%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, .7);
 	content: "";
+	width: 100%;
 }
+
 	.movieImgTitle {
-		margin-top: 12px;
+		margin-top: 10%;
+		margin-left: 10%;
 	}
 	.starringInfo {
 		display: block;
