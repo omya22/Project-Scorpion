@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/foundation.min.css">
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="/css/slick-theme.css">
+	<link rel="stylesheet" href="/css/styles.css">
+	<script src="/scripts/jquery.js"></script>
+	<script type="text/javascript" src="/scripts/foundation.min.js"></script>
+	<script type="text/javascript" src="/scripts/slick.min.js"></script>
+	<script rel="stylesheet" type="text/javascript" src="/scripts/main.js"></script>
+</head>
+<body>
+				<!-- HEADER -->
+	<header>
+			<div id="header" class="">
+					<div class="logoHeader">
+						<img src="/logo/Movieboxlogo.png" alt="Movie Box logo">
+					</div>
+					<div class="searchIcon">
+						<img src="/icon/LEIT.png" alt="">
+					</div>
+					<div class="small-12  headerText align-center align-self-middle">
+						<h1>Welcome To Movie Box</h1>
+					</div>
+			</div>
+	</header>
+	<div class="column">
+		<div class="row column small-12 large-11 categoryText">
+			<h2>Search Results for query</h2>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<% for(var i=0; i < searchData.results.length; i++) {%>
+			<div class="small-4">
+				<img src="https://image.tmdb.org/t/p/w150<%= searchData.results[i].poster_path %>">
+			</div>
+			<div class="small-8">
+				
+			</div>
+			<% } %>
+		</div>
+	</div>
+	<footer>
+		<div id="footer">
+			<div class="large-12 logoFooter align-self-bottom ">
+				<img src="/logo/Movieboxlogo.png" alt="">
+			</div>
+	</div>
+	</footer>
+</body>
+</html>
