@@ -49,8 +49,11 @@
 				<video src="" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
 
 				<div class="reveal trailer" id="exampleModal1" data-reveal>
-				      <video class="movieTrailer" src="../public/media/video.mp4" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
-				      
+				      <!-- <video class="movieTrailer" src="../public/media/video.mp4" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop="">
+				      </video> -->
+				    <div class="flex-video widescreen vimeo">
+  						<iframe src="http://player.vimeo.com/video/60122989" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
 				      <button class="close-button" data-close aria-label="Close modal" type="button">
 				        <span aria-hidden="true">&times;</span>
 				      </button>
