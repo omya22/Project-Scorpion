@@ -49,6 +49,10 @@ module.exports = function(parent, options){
           method = 'get';
           path = '/';
           break;
+        case 'index2':
+          method = 'get';
+          path = '/' + name;
+          break;
         default:
           /* istanbul ignore next */
           throw new Error('unrecognized route: ' + name + '.' + key);
