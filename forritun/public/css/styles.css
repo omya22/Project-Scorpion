@@ -85,6 +85,8 @@
 		overflow: hidden;
 		position: relative;
 		margin: 6px;
+		height: 214px;
+
 	}
 	.movieImg img {
 		width: 100%;
@@ -277,6 +279,7 @@ line-height: 113%;
 	overflow: hidden;
 	position: relative;
 	margin: 12px;
+	height: 350px;
 }
 .movieImg:after {
 	/*height: 50%;
