@@ -67,7 +67,7 @@ $('.responsive').slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2.5,
+        slidesToShow: 2,
         centerPadding: '20px',
         slidesToScroll: 1
       }

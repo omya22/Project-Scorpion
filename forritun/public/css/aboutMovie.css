@@ -94,26 +94,30 @@
 .still img {
 	height: 140px;
 }
-.movieHeader {
-	height: 100%;
-}
 .playButton {
 	position: absolute;
 	z-index: 999;
+	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
+	height: 100%;
 }
 .playButton svg {
 	margin: auto;
 	position: absolute;
 	left: 0;
 	right: 0;
-	/*top: calc(100%/4);*/
+	top: calc(100%/4);
 	width: 50px;
 }
 
-
+.trailer {
+	width: 500px;
+}
+.movieTrailer {
+	width: 100%;
+}
 @media screen and (min-width: 600px) {
 
 	.trailer {
@@ -154,9 +158,9 @@
 	font-size: 50px;
 }
 
-.cast {
+/*.cast {
 	height: 305px;
-}
+}*/
 /*.still {
 	margin-right: 6px;
 	height: 221px;
@@ -171,6 +175,15 @@
 	width: 100px;
 }
 }
+
+
+
+
+
+
+
+
+
 
 
 
