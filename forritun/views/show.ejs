@@ -46,13 +46,15 @@
 
 		<div class="movieHeader">
 			<div class="large-12 trailer">
-				<video src="" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
+				<video src="https://www.youtube.com/watch?v=<%= videos.results[0].key %>" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop=""><source src="media/marbleEdit.mp4" type="video/mp4"></video>
 
 				<div class="reveal" id="exampleModal1" data-reveal>
 				      <!-- <video class="movieTrailer" src="../public/media/video.mp4" poster="https://image.tmdb.org/t/p/original<%= data.backdrop_path %>" autoplay="" class="video" loop="">
 				      </video> -->
-				    <div class="flex-video widescreen vimeo">
-  						<iframe src="http://player.vimeo.com/video/60122989" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+				    <div class="flex-video widescreen youtube">
+				    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/<%= videos.results[0].key %>"
+  frameborder="0"></iframe>
 					</div>
 				      <button class="close-button" data-close aria-label="Close modal" type="button">
 				        <span aria-hidden="true">&times;</span>
