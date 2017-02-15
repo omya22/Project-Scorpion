@@ -23,12 +23,20 @@ class Movies extends TheMovieDB {
 			callback
 		)
 	}
-	getImages() {}
+	getImages(options, callback) {
+		this.validateRequired(arguments, 2, options, ["id"] );
+		this.client(
+			{
+				url: "movie/" + options.id + "/images" + this.generateQuery(options)
+			},
+			callback
+		)
+	}
 	getKeywords() {}
 	getReleaseDates() {}
-	// getTrailers(options, callback) {
-			
-	// }
+	getTrailers(options, callback) {
+			url: "movie/" + options.id + "/videos" + this.generateQuery(options)
+	}
 	getVideos() {}
 	getTranslations() {}
 	getRecommendations() {}

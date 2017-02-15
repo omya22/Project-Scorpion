@@ -9,8 +9,11 @@ exports.show = function(req, res, next){
 			const movieCredit = JSON.parse(cdata);
 			db.getSimilarMovies({id: req.params.movie_id}, sdata=> {
 				const movieSimilar = JSON.parse(sdata);
-				console.log(movieSimilar);
-				res.render('show', {data: movie, credit: movieCredit, similar: movieSimilar});
+				db.getImages({id: req.params.movie_id}, idata=> {
+					const movieImages = JSON.parse(idata);
+					console.log(movieImages);
+					res.render('show', {data: movie, credit: movieCredit, similar: movieSimilar, images: movieImages});
+				});
 			})
 			
 		})
