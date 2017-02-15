@@ -106,11 +106,16 @@
 		border-right: 100% solid transparent;
 		width: 70%;
 	}
+	
+/*	.movieImgTitle h3{
+		text-align: right;
+	}*/
 	.movieImgInfo {
 		color: black;
 		position: absolute;
-		bottom: 0;
-		right: 0;
+		margin: auto;
+  		position: absolute;
+  		top: 0; left: 0; bottom: 0; right: 0;
 		z-index: 300;
 		font-size: 30px;
 		color: #4F4F4F;
