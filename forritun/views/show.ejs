@@ -148,19 +148,11 @@
 						<h2>Stills</h2>
 						<div class="">
 							<div class="responsiveStills movieStills small-12 large-12">
-									
+								<% for(var i=0; i < images.backdrops.length; i++) {%>
 									<div class="still">
-										<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTExOTU0NDgyMjNeQTJeQWpwZ15BbWU4MDIyNDUxMzAy._V1_SX1777_CR0,0,1777,744_AL_.jpg" alt="">
+										<img src="https://image.tmdb.org/t/p/w500<%= images.backdrops[i].file_path %>" alt="">
 									</div>
-									<div class="still">
-										<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTExOTU0NDgyMjNeQTJeQWpwZ15BbWU4MDIyNDUxMzAy._V1_SX1777_CR0,0,1777,744_AL_.jpg" alt="">
-									</div>
-									<div class="still">
-										<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTExOTU0NDgyMjNeQTJeQWpwZ15BbWU4MDIyNDUxMzAy._V1_SX1777_CR0,0,1777,744_AL_.jpg" alt="">
-									</div>
-									<div class="still">
-										<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTExOTU0NDgyMjNeQTJeQWpwZ15BbWU4MDIyNDUxMzAy._V1_SX1777_CR0,0,1777,744_AL_.jpg" alt="">
-									</div>
+								<% } %>
 									
 							</div>
 						</div>
