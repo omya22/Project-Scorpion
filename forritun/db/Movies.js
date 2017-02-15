@@ -34,9 +34,17 @@ class Movies extends TheMovieDB {
 	}
 	getKeywords() {}
 	getReleaseDates() {}
-	// getTrailers(options, callback) {
-			
-	// }
+	getTrailers(options, callback) {	
+		this.validateRequired(arguments, 2, options, ["id", "type"] );
+		this.client(
+			{
+				url: "movie/" + options.id + "/videos" + this.generateQuery(options)
+			},
+			callback
+		)
+
+	}
+
 	getVideos() {}
 	getTranslations() {}
 	getRecommendations() {}

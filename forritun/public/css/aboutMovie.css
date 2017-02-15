@@ -11,7 +11,7 @@
 .floatingPoster {
 	/*width: 167px;*/
 	position: absolute;
-	top: -50px;
+	top: -35px;
 	z-index: 500;
 }
 
@@ -27,7 +27,7 @@
     -webkit-transform: skew(0deg,-10deg); /* Safari */
     transform: skew(0deg,-10deg); 
     position: absolute;
-    top: 204px;
+    top: 224px;
 }
 .unskewInfoBox {
 	width: 100%;
@@ -54,9 +54,12 @@
 	padding-right: -20px;
 	margin-bottom: 36px;
 }
-/*.cast img{
+
+.cast img{
 	height: 110px;
-}*/
+	object-fit: cover;
+	object-position: center;
+}
 .slick-prev,
 	.slick-next {
 		background-color: rgba(0, 0, 0, 0.09);
@@ -91,9 +94,9 @@
 .still {
 	margin-right: 6px;
 }
-.still img {
+/*.still img {
 	height: 140px;
-}
+}*/
 .movieHeader {
 	position: relative;
 }
@@ -107,20 +110,19 @@
 	height: 100%;
 }
 .playButton svg {
-	margin: auto;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: calc(100%/4);
 	width: 50px;
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.trailer {
+/*.trailer {
 	width: 500px;
-}
+}*/
 .movieTrailer {
-	width: 100%;
+	width: 100px;
 }
+
 @media screen and (min-width: 600px) {
 
 	.trailer {
@@ -174,8 +176,18 @@
 	position: absolute;
 }*/
 .playButton svg {
-	top: calc(100%/3);
+
 	width: 100px;
+}
+.movieTrailer {
+	width:400; 
+	height:225;
+}
+.cast img{
+	height: 320px;
+	width: 220px;
+	object-fit: cover;
+	object-position: center;
 }
 }
 
