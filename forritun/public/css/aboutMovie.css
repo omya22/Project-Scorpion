@@ -94,6 +94,9 @@
 .still img {
 	height: 140px;
 }
+.movieHeader {
+	position: relative;
+}
 .playButton {
 	position: absolute;
 	z-index: 999;
