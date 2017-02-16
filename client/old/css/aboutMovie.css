@@ -1,0 +1,204 @@
+.trailer {
+	width: 100%;
+	height: 284px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.trailer video{
+	width: 100%;
+}
+
+.floatingPoster {
+	/*width: 167px;*/
+	position: absolute;
+	top: -35px;
+	z-index: 500;
+}
+
+.floatingPoster img {
+	box-shadow: 0px 4px 8px #888888;
+	border-radius: 2px;
+}
+.skewInfoBox{
+	width: 100%;
+    height: 300px;
+    background-color: white;
+	-ms-transform: skew(0deg,-20deg); /* IE 9 */
+    -webkit-transform: skew(0deg,-10deg); /* Safari */
+    transform: skew(0deg,-10deg); 
+    position: absolute;
+    top: 224px;
+}
+.unskewInfoBox {
+	width: 100%;
+	height: 100%;
+	-ms-transform: skew(0deg,20deg); /* IE 9 */
+    -webkit-transform: skew(0deg,10deg); /* Safari */
+    transform: skew(0deg,10deg);
+    position: absolute;
+}
+
+.movieImgRatingLarge {
+	right: 16px;
+	position: absolute;
+	z-index: 800;
+	top: -50px;
+}
+
+.movieInfo {
+	height: 230px;
+	font-size: 12px;
+}
+.cast {
+	margin-right: 6px;
+	padding-right: -20px;
+	margin-bottom: 36px;
+}
+
+.cast img{
+	height: 110px;
+	object-fit: cover;
+	object-position: center;
+}
+.slick-prev,
+	.slick-next {
+		background-color: rgba(0, 0, 0, 0.09);
+		position: absolute;
+		z-index: 900;
+		height: 30px;
+		width: 20px;
+		transition: ease-in-out .2s;
+	}
+	.slick-prev:hover,
+	.slick-next:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 2px grey;
+		position: absolute;
+		z-index: 400;
+	}
+	.slick-prev {
+		left: -20px;
+	}
+	.slick-next {
+		right: -10px;
+	}
+
+	.slick-prev:before,
+	.slick-next:before{
+	font-family: none;
+
+	}
+.stills {
+	margin-bottom: 36px;
+}
+.still {
+	margin-right: 6px;
+}
+/*.still img {
+	height: 140px;
+}*/
+.movieHeader {
+	position: relative;
+}
+.playButton {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 100%;
+}
+.playButton svg {
+	width: 50px;
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/*.trailer {
+	width: 500px;
+}*/
+.movieTrailer {
+	width: 100px;
+}
+
+@media screen and (min-width: 600px) {
+
+	.trailer {
+	width: 100%;
+	height: 686px;
+	box-sizing: border-box;
+	overflow: hidden;
+	}
+	.skewInfoBox{
+	width: 100%;
+    height: 600px;
+    background-color: white;
+	-ms-transform: skew(0deg,-20deg); /* IE 9 */
+    -webkit-transform: skew(0deg,-10deg); /* Safari */
+    transform: skew(0deg,-10deg); 
+    position: absolute;
+    top: 600px;
+	}
+	.floatingPoster {
+	top: -200px;
+	}
+	.unskewInfoBox {
+	top: 50px;
+	}
+	.movieImgRatingLarge {
+	transform: scale(1.5);
+	top: -150px;
+}
+
+.movieInfo {
+	display: flex;
+}
+.large-flex-first {
+	-webkit-order: -1;
+    order: -1;
+}
+.movieTitle h2 {
+	font-size: 50px;
+}
+
+/*.cast {
+	height: 305px;
+}*/
+/*.still {
+	margin-right: 6px;
+	height: 221px;
+	width: 221px;
+	position: relative;
+}
+.still img {
+	position: absolute;
+}*/
+.playButton svg {
+
+	width: 100px;
+}
+.movieTrailer {
+	width:400; 
+	height:225;
+}
+.cast img{
+	height: 320px;
+	width: 220px;
+	object-fit: cover;
+	object-position: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

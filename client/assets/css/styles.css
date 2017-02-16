@@ -1,0 +1,363 @@
+body {
+		font-family: 'Oswald', sans-serif;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-size: 1.7em;
+		color: white;
+		font-weight: 300;
+	}
+	h2 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		color: #4F4F4F;
+	}
+	h3 {
+		font-family: "Oswald";
+		font-size: 30px;
+		color: #4F4F4F;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	}
+	h4 {
+		font-family: "Roboto Condensed";
+		font-size: 14px;
+		color: #737373;
+	}
+	h5 {
+		font-family: "Oswald";
+		color: white;
+		font-size: 20px;
+		font-weight: 300;
+	}
+	p {
+		font-family: "Roboto Condensed";
+		font-size: 15px;
+		line-height: 113%;
+		color: #4F4F4F;
+	}
+
+	/* 	-----	HEADER	-----  */
+	#header {
+		background: linear-gradient( #FAA20E, #E7833B);
+		width: 100%;
+		height: 200px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+		display: flex;
+		position: relative;
+	}
+	.logoHeader {
+		height: 42px;
+		width: 52px;
+		position: absolute;
+		left: 16px;
+		top: 14px;
+		z-index: 998;
+	}
+	.searchIcon {
+		height: 20px;
+		width: 21px;
+		position: absolute;
+		right: 20px;
+		top: 22px;
+		z-index: 999;
+	}
+	.headerText {
+		width: 100%;
+		position: absolute;
+	}
+	.headerText h1 {
+		text-align: center;
+		/*padding-bottom: 65px;*/
+	}
+	/* 	----	BODY	-----  */
+
+	.categoryText {
+		padding-top: 28px;
+		padding-bottom: 18px;
+	}
+
+	.movieImg {
+		border: 2px solid white;
+		box-sizing: border-box;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+		overflow: hidden;
+		position: relative;
+		margin: 6px;
+		height: 214px;
+
+	}
+	.movieImg img {
+		width: 100%;
+	}
+
+	.movieImg:after {
+		height: 100%;
+		/*width: 100px;*/
+		background-color: transparent;
+		content: "";
+		z-index: 120;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-bottom: 214px solid rgba(255, 255, 255, .8);
+		border-left: 90px solid transparent;
+		border-right: 100% solid transparent;
+		width: 70%;
+	}
+	.movieImgInfo {
+		margin: auto;
+  		position: absolute;
+		bottom: 5%; left: 60%;
+		z-index: 300;
+		font-size: 30px;
+		color: #4F4F4F;
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	}
+	.starringInfo {
+		display: none;
+	}
+	.ratingRow {
+		margin-bottom: 12px;
+	}
+	.movieImgRating {
+		/* Ellipse 2 */
+		background: #E7833B;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+		width: 32px;
+		height: 32px;
+		border-radius: 100%;
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+	.movieImgRating:after {
+		position: absolute;
+		content: "8.1";
+		font-weight: bold;
+		font-size: 13px;
+		color: #FFFFFF;
+		align-self: center;
+		font-family: "Roboto";
+	}
+
+	.slick-prev,
+	.slick-next {
+		background-color: rgba(0, 0, 0, 0.09);
+		position: absolute;
+		z-index: 900;
+		height: 95%;
+		width: 40px;
+		transition: ease-in-out .2s;
+	}
+	.slick-prev:hover,
+	.slick-next:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 2px grey;
+		position: absolute;
+		z-index: 400;
+	}
+	.slick-prev {
+		left: -22px;
+	}
+	.slick-next {
+		right: -22px;
+	}
+
+	.slick-prev:before,
+	.slick-next:before{
+	font-family: none;
+
+	}
+/* ---- 	MEDIA	 ----*/
+
+
+/* ---- 	MEDIA	 ----*/
+
+
+/* ---- 	MEDIA	 ----*/
+
+
+@media screen and (min-width: 600px) {
+
+
+h1 {
+	font-size: 72px;
+	color: white;
+}
+h2 {
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	
+	line-height: 100%;
+	color: #737373;
+}
+
+p {
+font-size: 22px;
+line-height: 113%;
+}
+/* 	-----	HEADER	-----  */
+
+#header {
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	font-weight: normal;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	display: flex;
+	background: -webkit-linear-gradient(#FAA20E 51%, #E7833B 84%);
+	background: -o-linear-gradient(#FAA20E 51%, #E7833B 84%);
+	background: linear-gradient(#FAA20E 51%, #E7833B 84%);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.logoHeader {
+	height: 104px;
+	top: 26px;
+	left: 24px;
+	width: 130px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.searchIcon {
+	position: absolute;
+	top: 44px;
+	width: 100px;
+}
+/*.searchIcon img {
+	width: 50px;
+}*/
+.headerText {}
+.headerText:after {
+	content: "Your favourite movie source";
+	color: white;
+	font-family: "Oswald";
+	font-weight: 300;
+	font-size: 42px;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* 	----	FOOTER	-----  */
+
+#footer {
+	width: 100%;
+	height: 305px;
+	margin-top: 50px;
+	position: relative;
+	text-align: center;
+	font-weight: normal;
+	display: flex;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	background: -webkit-linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+	background: -o-linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+	background: linear-gradient(#FAA20E 50%, #E7833B 85.88%);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.logoFooter {
+	width: 130px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.footerNav {
+	padding-bottom: 50px;
+}
+
+/* 	----	BODY	-----  */
+
+.movieImg {
+	border: 2px solid white;
+	box-sizing: border-box;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+	overflow: hidden;
+	position: relative;
+	margin: 12px;
+	height: 350px;
+}
+.movieImg:after {
+	/*height: 50%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	content: "";
+	z-index: 120;
+	position: absolute;
+	bottom: 0;
+	right: 0;*/
+	border: none;
+}
+.movieImg img {
+	width: 100%;
+}
+.categoryText {
+	padding-top: 28px;
+	padding-bottom: 18px;
+}
+.movieImgInfo {
+	color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 300;
+	font-size: 30px;
+	color: #4F4F4F;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+	height: 40%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .7);
+	content: "";
+	width: 100%;
+}
+
+	.movieImgTitle {
+		margin-top: 10%;
+		margin-left: 10%;
+	}
+	.starringInfo {
+		display: block;
+	}
+	.starringInfo ul li{
+		font-size: 10px;
+		list-style: none;
+	}
+	.starringInfo ul li:nth-child(2):before,
+	.starringInfo ul li:nth-child(2):after
+	 {
+		content: "|";
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	.movieImgRating {
+	/* Ellipse 2 */
+	background: #E7833B;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	}
+
+	.movieImgRating:after {
+	content: "8.1";
+	font-weight: bold;
+	font-size: 13px;
+	color: #FFFFFF;	
+	}
+	.slick-prev {
+		left: 10px;
+	}
+	.slick-next {
+		right: 0px;
+	}
+
+	.cast h4 {
+		margin-top: 12px;
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	}
+
