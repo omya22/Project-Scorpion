@@ -118,14 +118,21 @@
 <h2>People also liked</h2>
 <div class="responsive relevant">
 {{#each similar.results}}
-<div class="small-11 large-3 movieImg">
-
-
-<div class="movieImgRating">
-{{this.vote_average}}
-</div>
-<img alt="" class="similarimage" src="https://image.tmdb.org/t/p/w500{{this.poster_path}}">
-</div>
+			<div class="small-11 large-3 movieImg">
+				<a href="/#/movie/{{this.id}}">
+							<div class="movieImgRating">
+								{{this.vote_average}}
+							</div>
+					<div class="columns small-10 medium-12 large-12 movieImgInfo">
+						<div class="row">
+							<div class="movieImgTitle">
+								<h3>{{this.title}}</h3>
+							</div>
+						</div>
+					</div>
+					<img src="{{#if this.poster_path }}https://image.tmdb.org/t/p/w500/{{this.poster_path}}{{/if}}" alt="">
+				</a>
+			</div>
 {{/each}}
 </div>
 </div>

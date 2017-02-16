@@ -1,67 +1,65 @@
-
-				<!-- HEADER -->
-	<header>
-			<div id="header" class="">
-					<div class="logoHeader">
-						<img src="/assets/logo/Movieboxlogo.png" alt="Movie Box logo">
+<header>
+		<div id="header" class="">
+				<div class="logoHeader">
+					<img src="/assets/logo/Movieboxlogo.png" alt="Movie Box logo">
+				</div>
+				<div class="searchIcon">
+					<img src="/assets/icon/LEIT.png" alt="">
+				</div>
+				<div class="small-12  headerText align-center align-self-middle">
+					<h1>Welcome To Movie Box</h1>
+				</div>
+		</div>
+</header>
+<!-- Category 1 Row-1 -->
+<div class="column">
+	<div class="row column small-12 large-11 categoryText">
+		<h2>Popular</h2>
+	</div>
+	<div class="row row-1 small-12 large-11  responsive">
+		{{#each popular.results}}
+			<div class="small-11 large-3 movieImg">
+				<a href="/#/movie/{{this.id}}">
+					<div class="columns small-10 medium-12 large-12 movieImgInfo">
+						<div class="row">
+							<div class="movieImgTitle">
+								<h3>{{this.title}}</h3>
+							</div>
+							<div class="starringInfo columns large-12">
+								<ul class="row column">
+								</ul>
+							</div>
+						</div>
 					</div>
-					<div class="searchIcon">
-						<img src="/assets/icon/LEIT.png" alt="">
-					</div>
-					<div class="small-12  headerText align-center align-self-middle">
-						<h1>Welcome To Movie Box</h1>
-					</div>
+					<img src="{{#if this.poster_path }}https://image.tmdb.org/t/p/w500/{{this.poster_path}}{{/if}}" alt="">
+				</a>
 			</div>
-	</header>
-	<!-- Category 1 Row-1 -->
-	<div class="column">
-		<div class="row column small-12 large-11 categoryText">
-			<h2>Popular</h2>
-		</div>
-		<div class="row row-1 small-12 large-11  responsive">
-			{{#each popular.results}}
-				<div class="small-11 large-3 movieImg">
-					<a href="/#/movie/{{this.id}}">
-						<div class="columns small-10 medium-12 large-12 movieImgInfo">
-							<div class="row">
-								<div class="movieImgTitle">
-									<h3>{{this.title}}</h3>
-								</div>
-								<div class="starringInfo columns large-12">
-									<ul class="row column">
-									</ul>
-								</div>
-							</div>
-						</div>
-						<img src="{{#if this.poster_path }}https://image.tmdb.org/t/p/w500/{{this.poster_path}}{{/if}}" alt="">
-					</a>
-				</div>
-			{{/each}}
-		</div>
-		{{#each genre}}
-		<div class="row column small-12 large-11 categoryText">
-			<h2>{{this.name}}</h2>
-		</div>
-		<div class="row row-1 small-12 large-11  responsive">
-			{{#each this.movies.results}}
-				<div class="small-11 large-3 movieImg">
-					<a href="/#/movie/{{this.id}}">
-						<div class="columns small-10 medium-12 large-12 movieImgInfo">
-							<div class="row">
-								<div class="movieImgTitle">
-									<h3>{{this.title}}</h3>
-								</div>
-								<div class="starringInfo columns large-12">
-									<ul class="row column">
-									</ul>
-								</div>
-							</div>
-						</div>
-						<img src="{{#if this.poster_path }}https://image.tmdb.org/t/p/w500/{{this.poster_path}}{{/if}}" alt="">
-					</a>
-				</div>
-			{{/each}}
-		</div>
 		{{/each}}
-	
-	</div>		
+	</div>
+	{{#each genre}}
+	<div class="row column small-12 large-11 categoryText">
+		<h2>{{this.name}}</h2>
+	</div>
+	<div class="row row-1 small-12 large-11  responsive">
+		{{#each this.movies.results}}
+			<div class="small-11 large-3 movieImg">
+				<a href="/#/movie/{{this.id}}">
+					<div class="columns small-10 medium-12 large-12 movieImgInfo">
+						<div class="row">
+							<div class="movieImgTitle">
+								<h3>{{this.title}}</h3>
+							</div>
+							<div class="starringInfo columns large-12">
+								<ul class="row column">
+								</ul>
+							</div>
+						</div>
+					</div>
+					<img src="{{#if this.poster_path }}https://image.tmdb.org/t/p/w500/{{this.poster_path}}{{/if}}" alt="">
+				</a>
+			</div>
+		{{/each}}
+	</div>
+	{{/each}}
+
+</div>		
