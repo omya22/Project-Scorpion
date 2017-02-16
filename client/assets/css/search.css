@@ -1,0 +1,35 @@
+.searchItem {
+	margin: 15px;
+	padding-top:20px;
+	padding-bottom:15px;
+	border-bottom: 1px solid #E98438;
+}
+ #search {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #E98438;
+	box-shadow:none;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 16px;
+	color: #BDBDBD;
+    padding: 10px;
+    margin: 15px;
+    background-image: url('/assets/icon/LEITsvart.png');
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	background-size: 20px;
+	background-color: transparent;
+
+}
+
+.search {
+	margin-top:70px;
+}
+
+.fa-search {
+	position: absolute;
+	top: 0;
+	right:0;
+	margin-right: 20px;
+}

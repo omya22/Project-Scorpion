@@ -1,0 +1,51 @@
+<form action="">
+	<input type="text" id="search">
+</form>
+	<div class="column">
+		<div class="row column small-12 large-11 categoryText">
+			<h2>Search results: {{data.total_results}}</h2>
+		</div>
+	</div>
+	<div class="container">
+		{{#each data.results}}
+		{{#compare this.media_type "person"}}
+		<div class="row searchItem">
+			<div class="small-4 medium-2 column">
+				<img src="https://image.tmdb.org/t/p/w500{{this.profile_path}} ">
+			</div>
+			<div class="small-8 medium-10 column">
+				<div class="movie-title">{{this.name}}</div>
+				{{this.birthday}}
+
+				 	{{#each this.known_for}}
+					<div class="column">{{this.title}}</div>
+					{{/each}}
+			</div>
+		</div>
+		{{/compare}}
+		{{#compare this.media_type "tv"}}
+		<div class="row searchItem">
+			<div class="small-4">
+				<img src="https://image.tmdb.org/t/p/w500{{this.poster_path}} ">
+			</div>
+			<div class="small-8">
+				<div class="movie-title">{{this.name}}</div>
+				<div class="row">
+					<div class="column"></div>
+				</div>
+			</div>
+		{{/compare}}
+		</div>
+		{{#compare this.media_type "movie"}}
+		<div class="row searchItem">
+			<div class="small-6">
+				<img src="https://image.tmdb.org/t/p/w500{{this.poster_path}} ">
+			</div>
+			<div class="small-6">
+				<div class="movie-title">{{this.title}}</div>
+				<div class="movie-overview"><p>{{this.overview}}</p></div>
+			</div>
+		{{/compare}}
+	{{/each}}
+		</div>
+	</div>
