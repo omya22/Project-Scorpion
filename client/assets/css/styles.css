@@ -130,17 +130,14 @@ body {
 		position: relative;
 		display: flex;
 		justify-content: center;
-	}
-	.movieImgRating:after {
 		position: absolute;
-		content: "8.1";
 		font-weight: bold;
 		font-size: 13px;
 		color: #FFFFFF;
 		align-self: center;
 		font-family: "Roboto";
+		padding:5px;
 	}
-
 	.slick-prev,
 	.slick-next {
 		background-color: rgba(0, 0, 0, 0.09);
@@ -338,10 +335,6 @@ line-height: 113%;
 	width: 32px;
 	height: 32px;
 	border-radius: 100%;
-	}
-
-	.movieImgRating:after {
-	content: "8.1";
 	font-weight: bold;
 	font-size: 13px;
 	color: #FFFFFF;	
