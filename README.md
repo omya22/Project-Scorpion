@@ -14,6 +14,7 @@ Við notum fáa stílhreina liti til að halda einföldu útliti. Kvikmynda pós
 
 Áhersla var lögð á stílhreina leit og einfalda og praktíska filteringu. Hvert skref er gert til að leiða notandan áfram í það næsta. Uppsetning gefur honum möguleikann á að hreinsa val, eyða út eða bæta við filteringu, allt í þeim tilgangi að létta notandanum skrefin. Hnappar sem birta fleiri filtera svo viðmótið haldist hreint, einfalt er að smella á hnappana til að ‘droppa’ filterum niður og gera leitina enn ítarlegri.
 
+Note: Breyting varð  verkefninu og áttu allir að forrita sömu hönnunina. 
 
 Moodboard:
 https://projects.invisionapp.com/boards/KB353HVZU98CH/
